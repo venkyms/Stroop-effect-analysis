@@ -11784,6 +11784,7 @@ div#notebook {
 <li><a href="#q3">3. Report some descriptive statistics regarding this dataset. Include at least one measure of central tendency and at least one measure of variability.</a></li>
 <li><a href="#q4">4. Provide one or two visualizations that show the distribution of the sample data. Write one or two sentences noting what you observe about the plot or plots.</a></li>
 <li><a href="#q5">5. Now, perform the statistical test and report your results. What is your confidence level and your critical statistic value? Do you reject the null hypothesis or fail to reject it? Come to a conclusion in terms of the experiment task. Did the results match up with your expectations?</a></li>
+<li><a href="#q6">6. What do you think is responsible for the effects observed? Can you think of an alternative or similar task that would result in a similar effect? Some research about the problem will be helpful for thinking about these two questions!</a></li>
 </ul>
 </li>
 <li><p><a href="#c">Conclusion</a></p>
@@ -11807,31 +11808,88 @@ div#notebook {
 <li><strong>Dependent Variable</strong>   : Response time</li>
 </ul>
 <p><a id='q2'></a></p>
-<h3 id="2.-What-is-an-appropriate-set-of-hypotheses-for-this-task?-What-kind-of-statistical-test-do-you-expect-to-perform?-Justify-your-choices.">2. What is an appropriate set of hypotheses for this task? What kind of statistical test do you expect to perform? Justify your choices.<a class="anchor-link" href="#2.-What-is-an-appropriate-set-of-hypotheses-for-this-task?-What-kind-of-statistical-test-do-you-expect-to-perform?-Justify-your-choices.">&#182;</a></h3><p>Here we have two set of samples which are dependent, and the population mean is not provided. So for this condition T-Test would be the appropriate statistical test.</p>
-
-<pre><code>- c represents Congruent Variable
-- i represents Incongruent Variable
-
-</code></pre>
-<p><strong>Null Hypotheses</strong> :
-$H_0: \mu_c = \mu_i$</p>
-<p>This can be further redefined as : 
-$H_0: \mu_c - \mu_i  = 0$</p>
-<p><strong>Alternate Hypotheses</strong> :
-$H_1: \mu_c \neq \mu_i$</p>
-<p>This can be further redefined as :
-$H_0: \mu_c - \mu_i  \neq 0$</p>
+<h3 id="2.-What-is-an-appropriate-set-of-hypotheses-for-this-task?-What-kind-of-statistical-test-do-you-expect-to-perform?-Justify-your-choices.">2. What is an appropriate set of hypotheses for this task? What kind of statistical test do you expect to perform? Justify your choices.<a class="anchor-link" href="#2.-What-is-an-appropriate-set-of-hypotheses-for-this-task?-What-kind-of-statistical-test-do-you-expect-to-perform?-Justify-your-choices.">&#182;</a></h3><p>Here for this problem I am trying to find if there is any significant difference in response time for Congruent and Incongruent variable with an appropriate statistical test.</p>
+<p>Here there are two set of dependent samples(i.e, same subject in invloved in both task), and the population mean is not provided. The sample size are small and I need to find the difference the samples. And statistically infere the difference in population mean.</p>
+<p>So for this condition <strong>T-Test</strong> would be the appropriate statistical test.</p>
+<p><strong>Null Hypotheses</strong> :</p>
+<p>Null hypotheses can be defined as there is no difference in mean response time of Congruent and Incongruent variables. Which mean the time taken to read the out the color in both the case is same.</p>
+<p>This can be represented by below equation</p>
+<p>$H_0: \mu_c = \mu_i$</p>
+<p>And above equation can be further redefined as :</p>
+<p>$H_0: \mu_c - \mu_i  = 0$</p>
+<p><strong>Alternate Hypotheses</strong> :</p>
+<p>Alternate hypotheses is to prove Null hypotheses is false. Which means there is a significant difference in mean response time of Congruent and Incongruent variables. And both are not same.</p>
+<p>This can be represented by below equation</p>
+<p>$H_1: \mu_c \neq \mu_i$</p>
+<p>And above equation can be further redefined as :</p>
+<p>$H_1: \mu_c - \mu_i  \neq 0$</p>
+<table>
+<thead><tr>
+<th style="text-align:left">Symbol</th>
+<th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">$H_0$</td>
+<td style="text-align:center">Null hypotheses</td>
+</tr>
+<tr>
+<td style="text-align:left">$H_1$</td>
+<td style="text-align:center">Alternate hypotheses</td>
+</tr>
+<tr>
+<td style="text-align:left">$\mu_c$</td>
+<td style="text-align:center">Population mean of congruent variable</td>
+</tr>
+<tr>
+<td style="text-align:left">$\mu_i$</td>
+<td style="text-align:center">Population mean of incongruent variable</td>
+</tr>
+</tbody>
+</table>
 <p><a id='q3'></a></p>
-<h3 id="3.-Report-some-descriptive-statistics-regarding-this-dataset.-Include-at-least-one-measure-of-central-tendency-and-at-least-one-measure-of-variability.">3. Report some descriptive statistics regarding this dataset. Include at least one measure of central tendency and at least one measure of variability.<a class="anchor-link" href="#3.-Report-some-descriptive-statistics-regarding-this-dataset.-Include-at-least-one-measure-of-central-tendency-and-at-least-one-measure-of-variability.">&#182;</a></h3><ul>
-<li><strong>Congruent mean</strong>: 14.05</li>
-<li><strong>Congruent variance</strong>: 12.67</li>
-<li><strong>Congruent standard deviation</strong>: 3.56</li>
-<li><strong>Congruent Standard Error</strong>: 0.73</li>
-<li><strong>Incongruent mean</strong>: 22.02</li>
-<li><strong>Incongruent variance</strong>: 23.01</li>
-<li><strong>Incongruent standard deviation</strong>: 4.8</li>
-<li><strong>Incongruent Standard Error</strong>: 0.98</li>
-</ul>
+<h3 id="3.-Report-some-descriptive-statistics-regarding-this-dataset.-Include-at-least-one-measure-of-central-tendency-and-at-least-one-measure-of-variability.">3. Report some descriptive statistics regarding this dataset. Include at least one measure of central tendency and at least one measure of variability.<a class="anchor-link" href="#3.-Report-some-descriptive-statistics-regarding-this-dataset.-Include-at-least-one-measure-of-central-tendency-and-at-least-one-measure-of-variability.">&#182;</a></h3><table>
+<thead><tr>
+<th style="text-align:left">Descriptive Statistics</th>
+<th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Congruent mean</strong></td>
+<td style="text-align:left">14.05</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Congruent variance</strong></td>
+<td style="text-align:left">12.67</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Congruent standard deviation</strong></td>
+<td style="text-align:left">3.56</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Congruent Standard Error</strong></td>
+<td style="text-align:left">0.73</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Incongruent mean</strong></td>
+<td style="text-align:left">22.02</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Incongruent variance</strong></td>
+<td style="text-align:left">23.01</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Incongruent standard deviation</strong></td>
+<td style="text-align:left">4.8</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Incongruent Standard Error</strong></td>
+<td style="text-align:left">0.98</td>
+</tr>
+</tbody>
+</table>
 <p>Below is the Python program used to generate above data</p>
 
 </div>
@@ -11839,7 +11897,7 @@ $H_0: \mu_c - \mu_i  \neq 0$</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -11854,7 +11912,7 @@ $H_0: \mu_c - \mu_i  \neq 0$</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">calculate_discriptive_statistics_data</span><span class="p">(</span><span class="n">label</span><span class="p">):</span>
@@ -11890,7 +11948,7 @@ $H_0: \mu_c - \mu_i  \neq 0$</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">stroop_effect_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/stroopdata.csv&#39;</span><span class="p">)</span>
@@ -11966,7 +12024,7 @@ Incongruent Standard Error: 0.98
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">display_stroop_effect_plot</span><span class="p">():</span>
@@ -11974,7 +12032,7 @@ Incongruent Standard Error: 0.98
 <span class="sd">    Function to generate a bar plot to display the Congruent and Incongruent data in plot</span>
 <span class="sd">    :return: None</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">ax</span> <span class="o">=</span> <span class="n">stroop_effect_df</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">()</span>
+    <span class="n">ax</span> <span class="o">=</span> <span class="n">stroop_effect_df</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">box</span><span class="p">()</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Stroop Effect plot&#39;</span><span class="p">)</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Test Subject&#39;</span><span class="p">)</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Response Time&#39;</span><span class="p">)</span>
@@ -11988,7 +12046,7 @@ Incongruent Standard Error: 0.98
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display_stroop_effect_plot</span><span class="p">()</span>
@@ -12010,7 +12068,7 @@ Incongruent Standard Error: 0.98
 
 
 <div class="output_png output_subarea ">
-<img src="data:image/png;base64,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cOyxxzJp0iR+/etfu53A2q7cq6l8JVW9WsUziwcOHBh1n0cwb948Pv/5z5cpopa1evVqunTpQkTwgx/8gF122YVRo0aVO6y82tL2bzN8+Wj9MpwIJM2MiIGNLddqu5hoS8aNG0dVVRW7774777zzDqeffnq5QzKzDGm1nc61JaNGjdrgjwDMrO3yEYGZWcY5EZiZZZwTgZlZxjkRmJllnBPBeujSpUu5Qyiq++67jxdeeKHcYZhZkbWdq4bqXkO93utrfdcbt3RX1ffddx+HH344ffr0abF1mtmGx0cELSBfF9PTp09n3333pX///gwaNIhVq1axZs0aTj75ZPr168cee+zBY489BsD48eM55phjGDJkCLvssgvnn39+bR033ngju+66KwceeCCnnXZabXfUJ510Eueccw5f/vKXueCCCxg9ejRjx46tLde3b9/a7ituu+02Bg0aRFVVFaeffjrr1q0DkiObH//4x/Tv35999tmHZcuW8eSTT3L//fdz3nnnUVVVxcsvv1yKTWlmZeBE0ELq62L6o48+4rjjjuNXv/pVbbfUnTt35pprrgFgzpw5TJgwgREjRtR2IFddXc3EiROZM2cOEydOZNGiRSxZsoSf//znPPXUU0yePPkz3VW8+OKLTJkyhV/+8pcNxjdv3jwmTpzIE088QXV1Ne3ateP2228H4L333mOfffZh9uzZ7L///owbN459992XI488kiuuuILq6mp23nnnIm05Myu3tnNqqMxqupgGaruY7tatGz169GCvvfYCYLPNNgOSrqrPPPNMIOl0bscdd6ztJO7ggw+mW7fkNFefPn1YuHAhK1as4IADDmDLLbcEYNiwYf/WqdywYcNo165d3vgeeeQRZs6cWRvLBx98wNZbbw1Ax44dax+Gs+eeezJ58uT13yBm1mo4EbSQhrqYru9B7+XqqnrEiBFceumlnynfoUOH2jjdVbVZ9vjUUBH17t2bJUuW1D6YZtWqVaxdu5b999+/9rTMiy++yGuvvcZuu+3W4HoGDRrEX//6V9566y3Wrl3LPffc0+CylZWVzJo1C4BZs2bx6quvAsmRxt13380bb7wBwJtvvvlvD6+pj7uqNssGJ4Ii6tixIxMnTuTMM8+kf//+HHrooaxZs4bvf//7rFu3jn79+nHccccxfvz4fzsSqGu77bbj4osvZu+99+aQ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
+<img src="data:image/png;base64,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
 "
 >
 </div>
@@ -12041,7 +12099,7 @@ Incongruent Standard Error: 0.98
 <li><strong>Difference Standard Deviation</strong>: 4.86</li>
 <li><strong>Difference Standard Error</strong>: 0.99</li>
 <li><strong>t-Statistics</strong>: -8.02</li>
-<li><strong>t-critical value at 95% confidence level and DF at 23 is</strong>: $\pm1.714$</li>
+<li><strong>t-critical value at 95% confidence level and DF at 23 is</strong>: $\pm2.069$</li>
 </ul>
 <p>Above data is the output of below python program which performs the statistical test on the difference data.</p>
 
@@ -12050,7 +12108,7 @@ Incongruent Standard Error: 0.98
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">perform_statistical_analysis</span><span class="p">():</span>
@@ -12083,7 +12141,7 @@ Incongruent Standard Error: 0.98
 
     <span class="c1"># Got the t-critical value from t-table manually</span>
     <span class="n">degrees_of_freedom</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span>
-    <span class="n">t_critical</span> <span class="o">=</span> <span class="mf">1.714</span>
+    <span class="n">t_critical</span> <span class="o">=</span> <span class="mf">2.069</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;t-critical value at 95</span><span class="si">% c</span><span class="s1">onfidence level and DF at </span><span class="si">{}</span><span class="s1"> is: +or-</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">degrees_of_freedom</span><span class="p">,</span> <span class="n">t_critical</span><span class="p">))</span>
 </pre></div>
 
@@ -12094,7 +12152,7 @@ Incongruent Standard Error: 0.98
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">perform_statistical_analysis</span><span class="p">()</span>
@@ -12143,7 +12201,7 @@ Mean Difference: -7.96
 Difference Standard Deviation: 4.86
 Difference Standard Error: 0.99
 t-Statistics: -8.02
-t-critical value at 95% confidence level and DF at 23 is: +or-1.714
+t-critical value at 95% confidence level and DF at 23 is: +or-2.069
 </pre>
 </div>
 </div>
@@ -12167,12 +12225,26 @@ This proves that, there is a significant difference in response time between Con
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='q6'></a></p>
+<h3 id="6.-What-do-you-think-is-responsible-for-the-effects-observed?-Can-you-think-of-an-alternative-or-similar-task-that-would-result-in-a-similar-effect?-Some-research-about-the-problem-will-be-helpful-for-thinking-about-these-two-questions!">6. What do you think is responsible for the effects observed? Can you think of an alternative or similar task that would result in a similar effect? Some research about the problem will be helpful for thinking about these two questions!<a class="anchor-link" href="#6.-What-do-you-think-is-responsible-for-the-effects-observed?-Can-you-think-of-an-alternative-or-similar-task-that-would-result-in-a-similar-effect?-Some-research-about-the-problem-will-be-helpful-for-thinking-about-these-two-questions!">&#182;</a></h3><p><strong>What do you think is responsible for the effects observed?</strong>
+As habitual readers, we encounter and comprehend words on such a persistent basis that the reading occurs almost effortlessly, whereas declaration of a color requires more cognitive effort. When there is a conflict between these two sources of information, our cognitive load is increased, and our brains have to work harder to resolve the required difference. Performing these tasks (preventing reading, processing word color, and resolving information conflict) ultimately slows down our responses, and makes the task take longer.</p>
+<p><strong>Can you think of an alternative or similar task that would result in a similar effect?</strong>
+Similar effect can be noticed in Picture Word task. If the Picture and the words are differenc then there will be an increase in response time to read the word. For example if there is a Elephant picture and the word says cat, our brain tends to identify the picture first.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Reference">Reference<a class="anchor-link" href="#Reference">&#182;</a></h3><ul>
 <li><a href="https://statistics.laerd.com/statistical-guides/types-of-variable.php">https://statistics.laerd.com/statistical-guides/types-of-variable.php</a></li>
 <li><a href="http://www.dummies.com/education/math/statistics/how-to-calculate-percentiles-in-statistics/">http://www.dummies.com/education/math/statistics/how-to-calculate-percentiles-in-statistics/</a></li>
 <li><a href="https://pandas.pydata.org/pandas-docs/stable/api.html">https://pandas.pydata.org/pandas-docs/stable/api.html</a> (Panda documentation)</li>
 <li><a href="https://www.youtube.com/watch?v=FE4qaRNZzS0&amp;ytbChannel=null">https://www.youtube.com/watch?v=FE4qaRNZzS0&amp;ytbChannel=null</a> (Two sample t-test)</li>
 <li><a href="https://stackoverflow.com/questions/28748301/how-can-i-left-align-latex-equations-in-r-markdown">https://stackoverflow.com/questions/28748301/how-can-i-left-align-latex-equations-in-r-markdown</a> (Stackoverflow is used for other queries aswell)</li>
+<li><a href="https://imotions.com/blog/the-stroop-effect/">https://imotions.com/blog/the-stroop-effect/</a></li>
 </ul>
 
 </div>
@@ -12180,7 +12252,7 @@ This proves that, there is a significant difference in response time between Con
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">subprocess</span> <span class="k">import</span> <span class="n">call</span>
@@ -12188,6 +12260,26 @@ This proves that, there is a significant difference in response time between Con
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[42]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
